@@ -14,20 +14,20 @@ int main()
     printf("enter number of %s taken :",itemname);
     scanf("%d",&qty);
     totalprice=itemprice*qty;
-    if (itemname=="shirt")
+    if (strcmp(itemname,"shirt")==0)
     {
         discountprice=totalprice*5/100;
         Netprice=totalprice-discountprice;
         printf("Hello %s. Your item %s of quantity %d cost you total of ₹%f.\nA discount of ₹%f is granted.\nNet payable amount is ₹%f",cname,itemname,qty,totalprice,discountprice,Netprice);
     }
-    else if(itemname=="churudar")
+    else if(strcmp(itemname,"churudar")==0)
     {
         discountprice=totalprice*10/100;
         Netprice=totalprice-discountprice;
         printf("Hello %s. Your item %s of quantity %d cost you total of ₹%f.\nA discount of ₹%f is granted.\nNet payable amount is ₹%f",cname,itemname,qty,totalprice,discountprice,Netprice);
 
     }
-    else if(itemname=="jeans")
+    else if(strcmp(itemname,"jeans")==0)
     {
         discountprice=totalprice*20/100;
         Netprice=totalprice-discountprice;
